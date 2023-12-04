@@ -1,0 +1,47 @@
+Name,Department,Role,JobTitle
+test1,Executives 1,Global Administrator,General Manager 1
+test2,HR 1,Search Administrator,HR Administrator
+test2,HR 1,Virtual Visits Administrator,HR Administrator
+test3,HR 2,Search Editor,HR Editor
+test4,HR 3,Printer Administrator,HR Printer
+test5,IT 1,Application Administrator,IT Administrator
+test5,IT 1,User Administrator,IT Administrator
+test5,IT 1,License Administrator,IT Administrator
+test5,IT 1,Network Administrator,IT Administrator
+test6,IT 2,Application Developer,Developer
+test7,IT 3,Azure DevOps Administrator,DevOps
+test8,IT 4,Office Apps Administrator,IT Office Apps
+test9,IT 5,Intune Administrator,Intune Admin
+test10,IT 6,Reports Reader,Helpdesk Admin
+test10,IT 6,Helpdesk Administrator,Helpdesk Admin
+test11,Heathcare 1,Global Reader,Healthcare Administrator
+test11,Heathcare 1,Virtual Visits Administrator,Healthcare Administrator
+test11,Heathcare 1,Viva Pulse Administrator,Healthcare Administrator
+test11,Heathcare 1,Viva Goals Administrator,Healthcare Administrator
+test12,Heathcare 2,Message Center Reader,Healthcare Reader
+test13,Sales 1,Teams Administrator,Sales Administrator
+test13,Sales 1,Office Apps Administrator,Sales Administrator
+test13,Sales 1,License Administrator,Sales Administrator
+test13,Sales 1,Billing Administrator,Sales Administrator
+test13,Sales 1,Application Administrator,Sales Administrator
+test14,Administrators,SharePoint Administrator,SharePoint Admin
+test15,Sales 2,Teams Communications Support Engineer,Teams Communications Specialist
+test15,Sales 2,Teams Communications Administrator,Teams Communications Specialist
+test15,Sales 2,Teams Communications Support Specialist,Teams Communications Specialist
+test16,Sales 3,Tenant Creator,Sales Reader
+test16,Sales 3,Usage Summary Reports Reader,Sales Reader
+test17,Security 1,Compliance Administrator,Security Administrator
+test17,Security 1,Global Reader,Security Administrator
+test17,Security 1,Groups Administrator,Security Administrator
+test17,Security 1,Security Administrator,Security Administrator
+test17,Security 1,Password Administrator,Security Administrator
+test17,Security 1,Privileged Authentication Administrator,Security Administrator
+test17,Security 1,Privileged Role Administrator,Security Administrator
+test17,Security 1,Intune Administrator,Security Administrator
+test17,Security 1,Network Administrator,Security Administrator
+test18,Security 2,Conditional Access Administrator,Compliance Admin
+test18,Security 2,Compliance Data Administrator,Compliance Admin
+test19,Security 3,Security Reader,Security Operator
+test19,Security 3,Security Operator,Security Operator
+test20,Security 4,Security Reader,Security Analyst
+test21,Executives 2,Global Administrator,General Manager 2
