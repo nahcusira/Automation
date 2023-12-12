@@ -1,3 +1,4 @@
+# Generate password random with the conditions
 resource "random_password" "password" {
   count       = length(local.name)
   length      = 16
@@ -8,6 +9,7 @@ resource "random_password" "password" {
   special     = true
 }
 
+# Create a user with information by CSV file
 resource "azuread_user" "user" {
   count               = length(local.name)
   user_principal_name = "${local.name[count.index]}${var.domain}"
@@ -15,9 +17,9 @@ resource "azuread_user" "user" {
   password            = random_password.password[count.index].result
   department          = local.department[count.index]
   job_title           = local.jobTitle[count.index]
-  usage_location      = "VN"
 }
 
+# Generate password random with the conditions
 resource "random_password" "password_null" {
   count       = length(local.name_null)
   length      = 16
@@ -28,6 +30,7 @@ resource "random_password" "password_null" {
   special     = true
 }
 
+# Create a user with information by CSV file
 resource "azuread_user" "user_null" {
   count               = length(local.name_null)
   user_principal_name = "${local.name_null[count.index]}${var.domain}"
@@ -35,9 +38,9 @@ resource "azuread_user" "user_null" {
   password            = random_password.password_null[count.index].result
   department          = local.departmentNull[count.index]
   job_title           = local.jobTitleNull[count.index]
-  usage_location      = "VN"
 }
 
+# Generate password random with the conditions
 resource "random_password" "password_custom" {
   count       = length(local.name_custom)
   length      = 16
@@ -48,6 +51,7 @@ resource "random_password" "password_custom" {
   special     = true
 }
 
+# Create a user with information by CSV file
 resource "azuread_user" "user_custom" {
   count               = length(local.name_custom)
   user_principal_name = "${local.name_custom[count.index]}${var.domain}"
@@ -55,5 +59,4 @@ resource "azuread_user" "user_custom" {
   password            = random_password.password_custom[count.index].result
   department          = local.departmentCustom[count.index]
   job_title           = local.jobTitleCustom[count.index]
-  usage_location      = "VN"
 }

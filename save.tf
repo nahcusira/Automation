@@ -1,3 +1,4 @@
+# Save username and password to CSV file
 resource "local_file" "user" {
   filename = "users.csv"
   content  = <<EOF

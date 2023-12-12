@@ -1,3 +1,4 @@
+# Create group Sales
 resource "azuread_group" "group_sales" {
   display_name     = "Group Sales"
   mail_enabled     = false
@@ -10,6 +11,7 @@ resource "azuread_group" "group_sales" {
   depends_on = [azuread_user.user, azuread_user.user_custom, azuread_user.user_null]
 }
 
+# Create group IT
 resource "azuread_group" "group_it" {
   display_name     = "Group IT"
   mail_enabled     = false
@@ -21,6 +23,8 @@ resource "azuread_group" "group_it" {
   }
   depends_on = [azuread_user.user, azuread_user.user_custom, azuread_user.user_null]
 }
+
+# Create group Executives
 
 resource "azuread_group" "group_executives" {
   display_name     = "Group Executives"
@@ -34,6 +38,8 @@ resource "azuread_group" "group_executives" {
   depends_on = [azuread_user.user, azuread_user.user_custom, azuread_user.user_null]
 }
 
+# Create group Security
+
 resource "azuread_group" "group_security" {
   display_name     = "Group Security"
   mail_enabled     = false
@@ -45,6 +51,8 @@ resource "azuread_group" "group_security" {
   }
   depends_on = [azuread_user.user, azuread_user.user_custom, azuread_user.user_null]
 }
+
+# Create group Heathcare
 
 resource "azuread_group" "group_heathcare" {
   display_name     = "Group Heathcare"
@@ -58,6 +66,8 @@ resource "azuread_group" "group_heathcare" {
   depends_on = [azuread_user.user, azuread_user.user_custom, azuread_user.user_null]
 }
 
+# Create group HR
+
 resource "azuread_group" "group_hr" {
   display_name     = "Group HR"
   mail_enabled     = false
@@ -69,6 +79,8 @@ resource "azuread_group" "group_hr" {
   }
   depends_on = [azuread_user.user, azuread_user.user_custom, azuread_user.user_null]
 }
+
+# Create group Digital
 
 resource "azuread_group" "group_digital" {
   display_name     = "Group Digital"
@@ -82,6 +94,7 @@ resource "azuread_group" "group_digital" {
   depends_on = [azuread_user.user, azuread_user.user_custom, azuread_user.user_null]
 }
 
+# Create group Design
 resource "azuread_group" "group_design" {
   display_name     = "Group Design"
   mail_enabled     = false
@@ -93,6 +106,8 @@ resource "azuread_group" "group_design" {
   }
   depends_on = [azuread_user.user, azuread_user.user_custom, azuread_user.user_null]
 }
+
+# Create group Administrator
 
 resource "azuread_group" "group_admin" {
   display_name     = "Group Administrator"

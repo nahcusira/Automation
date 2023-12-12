@@ -1,9 +1,11 @@
+# Get user by principal name
 data "azuread_user" "user_custom" {
   count               = length(local.csv_data_custom)
   user_principal_name = "${local.csv_data_custom[count.index]["Name"]}${var.domain}"
   depends_on          = [azuread_user.user_custom]
 }
 
+# Create roles custom for user
 resource "azuread_custom_directory_role" "role_custom_marketing" {
   display_name = "Marketing"
   description  = "Allows reading applications and updating groups"
@@ -59,6 +61,7 @@ resource "azuread_custom_directory_role" "role_custom_artist" {
   }
 }
 
+# Add role permissions for user
 resource "azuread_directory_role_assignment" "user_marketing" {
   role_id             = azuread_custom_directory_role.role_custom_marketing.template_id
   principal_object_id = data.azuread_user.user_custom[0].object_id
