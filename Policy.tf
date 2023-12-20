@@ -11,7 +11,7 @@ resource "azuread_conditional_access_policy" "Block_download_from_Unmanaged_devi
     }
     users {
       included_users = ["all"]
-      excluded_users = ["8229a447-6ba9-4b17-9dfb-35c1616e761c", "96a30619-cdaf-403a-9678-f313289f1379"]
+      excluded_users = ["66a13722-bc59-409f-8558-ed908b883f02"]
     }
     devices {
       filter {
@@ -42,7 +42,7 @@ resource "azuread_conditional_access_policy" "Re_authentication_after_4_hours_fr
     }
     users {
       included_users = ["all"]
-      excluded_users = ["8229a447-6ba9-4b17-9dfb-35c1616e761c", "96a30619-cdaf-403a-9678-f313289f1379"]
+      excluded_users = ["66a13722-bc59-409f-8558-ed908b883f02"]
     }
     devices {
       filter {
@@ -74,7 +74,7 @@ resource "azuread_conditional_access_policy" "Prevent_keep_browser_session_from_
     }
     users {
       included_users = ["all"]
-      excluded_users = ["8229a447-6ba9-4b17-9dfb-35c1616e761c", "96a30619-cdaf-403a-9678-f313289f1379"]
+      excluded_users = ["66a13722-bc59-409f-8558-ed908b883f02"]
     }
     devices {
       filter {
@@ -109,7 +109,7 @@ resource "azuread_conditional_access_policy" "MFA_risk_user" {
     }
     users {
       included_users = ["all"]
-      excluded_users = ["8229a447-6ba9-4b17-9dfb-35c1616e761c", "96a30619-cdaf-403a-9678-f313289f1379"]
+      excluded_users = ["66a13722-bc59-409f-8558-ed908b883f02"]
     }
   }
   grant_controls {
@@ -129,7 +129,7 @@ resource "azuread_conditional_access_policy" "passwordchangeUserRiskBased" {
     }
     users {
       included_users = ["all"]
-      excluded_users = ["8229a447-6ba9-4b17-9dfb-35c1616e761c", "96a30619-cdaf-403a-9678-f313289f1379"]
+      excluded_users = ["66a13722-bc59-409f-8558-ed908b883f02"]
     }
   }
   grant_controls {
