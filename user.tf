@@ -17,6 +17,7 @@ resource "azuread_user" "user" {
   password            = random_password.password[count.index].result
   department          = local.department[count.index]
   job_title           = local.jobTitle[count.index]
+  usage_location      = "VN"
 }
 
 # Generate password random with the conditions
@@ -38,6 +39,7 @@ resource "azuread_user" "user_null" {
   password            = random_password.password_null[count.index].result
   department          = local.departmentNull[count.index]
   job_title           = local.jobTitleNull[count.index]
+  usage_location      = "VN"
 }
 
 # Generate password random with the conditions
@@ -59,4 +61,5 @@ resource "azuread_user" "user_custom" {
   password            = random_password.password_custom[count.index].result
   department          = local.departmentCustom[count.index]
   job_title           = local.jobTitleCustom[count.index]
+  usage_location      = "VN"
 }
