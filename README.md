@@ -22,4 +22,4 @@ Connect-AzureAD -TenantId "Your tenant"
 
 # Step 6: Run Script
 
-.\Automation.ps1
+.\TAPS.ps1
